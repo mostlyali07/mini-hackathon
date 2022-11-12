@@ -11,7 +11,8 @@ body button {
 }
 
 h1,
-h2{
+h2,
+h6{
     font-family: 'Josefin Sans', sans-serif;
     color: rgb(0, 0, 0);
     font-weight: bold;
@@ -185,8 +186,47 @@ p{
     border: 1px solid rgb(0, 0, 0);
     transition: 0.6s;
 }
-
-
+.f-demo {
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #0000;
+    border: 1px solid #000000;
+    color: #0e0e0e;
+    border-radius: 9px;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+.f-demo:hover{
+    color: rgb(0, 0, 0);
+    background-color: #fdc886;
+    border: 1px solid #fdc886;
+    transition: 0.6s;
+}
+.g-demo {
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #0000;
+    border: 1px solid #000000;
+    color: #0e0e0e;
+    border-radius: 9px;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+.g-demo:hover{
+    color: rgb(0, 0, 0);
+    background-color: #fdc886;
+    border: 1px solid #fdc886;
+    transition: 0.6s;
+}
+footer{
+    border-radius: 26px;
+    background-color: #fdc88657;
+}
+footer h6{
+padding-top: 20px;
+}
 
 
 

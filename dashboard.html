@@ -42,7 +42,7 @@
             </div>
             <div class="col-md-1"></div>
             <div class="col-md-8 third_panel mt-2">
-                <form class="form_create">
+                <form class="form_create" style="display: none;">
                     <div class="form-group">
                         <label for="exampleFormControlSelect1">Teachers:</label>
                         <select class="form-control medium" id="teachers">
@@ -95,13 +95,70 @@
                         </select>
                     </div><br>
                     <button class="e-demo" id="create_stu">Submit</button>
+                    <!-- <button class="f-demo" id="create_edit">Edit</button> -->
+                    <!-- <button class="g-demo" id="create_del">Delete</button> -->
+                </form>
+                <form class="form_Student">
+                    <div class="form-group">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control medium" id="email" placeholder="name@example.com">
+                            <label for="floatingInput">Name</label>
+                        </div>
+                    </div><br>
+                    <Label>Enter Class Timing:</Label><br>
+                    <input type="radio" id="class_timing" name="class_timing" value="9am To 11am">
+                    <label for="class_timing">9am To 11am</label>
+                    <input type="radio" id="class_timing" name="class_timing" value="12pm To 2pm">
+                    <label for="class_timing">12pm To 2pm</label>
+                    <input type="radio" id="class_timing" name="class_timing" value="4pm To 6pm">
+                    <label for="class_timing">4pm To 6pm</label><br><br>
+                    <Label>Enter Class Schedule:</Label><br>
+                    <input type="radio" id="classes_schedule" name="classes_schedule" value="Mon, Wed, Fri">
+                    <label for="classes_schedule">Mon, Wed, Fri</label>
+                    <input type="radio" id="classes_schedule" name="classes_schedule" value="Sat, Sun">
+                    <label for="classes_schedule">Sat, Sun</label><br><br>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Sections:</label>
+                        <select class="form-control medium" id="sections">
+                            <option>A</option>
+                            <option>B</option>
+                            <option>C</option>
+                        </select>
+                    </div><br>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Courses:</label>
+                        <select class="form-control medium" id="courses">
+                            <option>Graphic Designing</option>
+                            <option>Web and Mobile Hybrid Applications</option>
+                            <option>Artificial Intelligence</option>
+                        </select>
+                    </div><br>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Batch:</label>
+                        <select class="form-control medium" id="batch">
+                            <option>Batch No: 1</option>
+                            <option>Batch No: 2</option>
+                            <option>Batch No: 3</option>
+                            <option>Batch No: 4</option>
+                            <option>Batch No: 5</option>
+                            <option>Batch No: 6</option>
+                            <option>Batch No: 7</option>
+                            <option>Batch No: 8</option>
+                        </select>
+                    </div><br>
+                    <button class="e-demo" id="create_stu">Submit</button>
+                    <!-- <button class="f-demo" id="create_edit">Edit</button> -->
+                    <!-- <button class="g-demo" id="create_del">Delete</button> -->
                 </form>
             </div>
         </div>
         <footer>
-            <div class="row">
-                <div class="col-md-6">
-
+            <div class="row mt-2 p-4">
+                <div class="col-md-6 text-center">
+                    <h6>&copy; All rights reserved</h6>
+                </div> 
+                <div class="col-md-6 text-center">
+                    <h6>Designed By Ali Rehan❤️</h6>
                 </div>
             </div>
         </footer>
