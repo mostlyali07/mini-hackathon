@@ -32,7 +32,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 
-//*********************** add Function ***********************//
+//*********************** Add Class Function ***********************//
 const submit_stu = document.getElementById("create_stu");
 
 
@@ -52,16 +52,31 @@ submit_stu.addEventListener("click", (event) => {
         courses: courses,
         batch: batch
     });
-    updateDoc(collection(db, "Classes"), {
-        teacher: teachers,
-        class_timing: class_timing,
-        classes_schedule: classes_schedule,
-        sections: sections,
-        courses: courses,
-        batch: batch
-    });
 });
 
+//*********************** Add Student Function ***********************//
+const create_student = document.getElementById("create_student");
+
+
+create_student.addEventListener("click", (event) => {
+    event.preventDefault()
+    let name = document.getElementById("name").value;
+    let F_name = document.getElementById("F_name").value;
+    let roll_no = document.getElementById("roll_no").value;
+    let cont_no = document.getElementById("cont_no").value;
+    let cnic = document.getElementById("cnic").value;
+    let customFile = document.getElementById("customFile").value;
+    let stu_courses = document.getElementById("stu_courses").value;
+    addDoc(collection(db, "Classes"), {
+        name: name,
+        F_name: F_name,
+        roll_no: roll_no,
+        cont_no: cont_no,
+        cnic: cnic,
+        customFile: customFile,
+        stu_courses: stu_courses
+    });
+});
 
 //*********************** Edit Function ***********************//
 // const create_edit = document.getElementById("create_edit");
