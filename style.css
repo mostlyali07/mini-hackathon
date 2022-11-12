@@ -83,3 +83,18 @@ p {
     background-repeat: no-repeat;
     background-size: contain;
 }
+.head_main{
+    height: 90px;
+    background-color: #0e0e0e;
+    border-radius: 6px;
+}
+.d-demo {
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #fdc886;
+    color: #0e0e0e;
+    border: 0px none;
+    border-radius: 9px;
+    padding: 10px 18px;
+    text-decoration: none;
+}
