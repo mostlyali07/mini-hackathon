@@ -131,10 +131,21 @@ p{
     height: 400px;
     background-color: #0e0e0e;
     border-radius: 26px;
-    padding: 10px;
+    padding: 20px;
 }
-.sec_panel ul li{
+.my_list{
+    font-family: 'Josefin Sans', sans-serif;
     list-style: none;
     color: #fff;
-    font-size: 26px;
+    font-size: 20px;
+    line-height: 40px;
+    border-radius: 6px;
+}
+.my_list:hover{
+    color: #0e0e0e;
+    background-color: #fdc886;
+    transition: 0.3s;
+}
+.sec_panel ul li i{
+    margin-right: 15px;
 }
