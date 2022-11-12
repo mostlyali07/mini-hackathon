@@ -133,3 +133,8 @@ p{
     border-radius: 26px;
     padding: 10px;
 }
+.sec_panel ul li{
+    list-style: none;
+    color: #fff;
+    font-size: 26px;
+}
