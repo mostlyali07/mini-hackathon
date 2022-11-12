@@ -11,8 +11,7 @@ body button {
 }
 
 h1,
-h2,
-h6{
+h2{
     font-family: 'Josefin Sans', sans-serif;
     color: rgb(0, 0, 0);
     font-weight: bold;
@@ -165,6 +164,9 @@ p{
 .form_create{
     padding: 20px;
 }
+.form_Student{
+    padding: 20px;
+}
 .medium{
     width: 350px !important;
     cursor: pointer;
@@ -227,7 +229,16 @@ footer{
 footer h6{
 padding-top: 20px;
 }
-
+.foot_main{
+    height: auto;
+    background-color: #0e0e0e;
+    border-radius: 26px;
+    color: #f5f2ea;
+    padding: 10px 10px 20px 10px;
+}
+.font_foot{
+    font-family: 'Josefin Sans', sans-serif;
+}
 
 
 
