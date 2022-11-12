@@ -1,7 +1,10 @@
+
 .body {
     background-color: #f5f2ea;
 }
-
+.body2{
+    background-color: #f5f2ea4f;
+}
 body button {
     font-family: 'Poppins', sans-serif;
     color: rgb(0, 0, 0);
@@ -14,12 +17,15 @@ h2{
     font-weight: bold;
 }
 
-label {
+label{
     font-family: 'Josefin Sans', sans-serif;
     color: rgb(0, 0, 0);
 
 }
-
+option{
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(0, 0, 0);
+}
 p{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -148,4 +154,51 @@ p{
 }
 .sec_panel ul li i{
     margin-right: 15px;
+}
+.third_panel{
+    background-color: #fdc88657;
+    border-radius: 26px;
+    padding: 20px;
+}
+.form_create{
+    padding: 20px
+}
+.medium{
+    width: 350px !important;
+}
+.e-demo {
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #fdc886;
+    border: 1px solid #fdc886;
+    color: #0e0e0e;
+    border-radius: 9px;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+.e-demo:hover{
+    color: rgb(0, 0, 0);
+    background-color: #0000;
+    border: 1px solid rgb(0, 0, 0);
+    transition: 0.6s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .medium{
+        width: 250px !important;
+    }
 }
