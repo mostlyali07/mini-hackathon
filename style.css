@@ -146,6 +146,7 @@ p{
     font-size: 20px;
     line-height: 40px;
     border-radius: 6px;
+    cursor: pointer;
 }
 .my_list:hover{
     color: #0e0e0e;
@@ -161,10 +162,11 @@ p{
     padding: 20px;
 }
 .form_create{
-    padding: 20px
+    padding: 20px;
 }
 .medium{
     width: 350px !important;
+    cursor: pointer;
 }
 .e-demo {
     font-size: 16px;
