@@ -7,7 +7,8 @@ body button {
     color: rgb(0, 0, 0);
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: 'Josefin Sans', sans-serif;
     color: rgb(0, 0, 0);
     font-weight: bold;
@@ -18,22 +19,32 @@ label {
     color: rgb(0, 0, 0);
 
 }
-p{
+
+p {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
-.fa-earth-europe{
+
+.fa-earth-europe {
     font-size: 26px;
     color: black !important;
     margin-top: 10px;
 }
+
 .div_one {
-    /* background-image: url(/back.jpg); */
     box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.45);
     -webkit-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.45);
     -moz-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.45);
     border-radius: 6px;
     background-color: #fff;
+}
+
+.div_one h1 {
+    font-size: 30px;
+}
+
+.div_one p {
+    font-size: 13px;
 }
 
 .div_two {
@@ -49,7 +60,8 @@ p{
     color: white !important;
     color: #0e0e0e !important;
 }
-.r-demo{
+
+.r-demo {
     font-size: 16px;
     font-weight: 600;
     background-color: #fdc886;
@@ -57,16 +69,18 @@ p{
     border: 0px none;
     border-radius: 9px;
     padding: 10px 18px;
-}
-.sign-in{
-    font-size: 16px;
-    font-weight: 600;
-    background-color: #0000;
-    border: 0px none;
-    border-radius: 9px;
-    padding: 10px 18px;
-}
-.sign-in a{
-    color: #0e0e0e;
     text-decoration: none;
+}
+.left_img {
+    background-image: url(/Assets/hand-drawn-left.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.right_img {
+    background-image: url(/Assets/hand-drawn-right.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }

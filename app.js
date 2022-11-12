@@ -19,7 +19,7 @@ import {
     addDoc,
     onSnapshot,
     Timestamp,
-} from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js";
+} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
 
 const firebaseConfig = {
     apiKey: "AIzaSyCmUZy2KYQO_UFn1VWdCfVjKbl5ov005Xw",
