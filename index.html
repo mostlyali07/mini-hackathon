@@ -20,6 +20,7 @@
 </head>
 
 <body class="body">
+    <marquee behavior="" direction="left">• Admin Email: admin1@gmail.com • Password: 12345678</marquee>
     <div class="container text-center mt-5">
         <div class="row">
             <div class="col-md-3">
@@ -33,18 +34,20 @@
         <div class="row">
             <div class="col-md-4 left_img"></div>
             <div class="col-md-4 text-center div_one mt-5 p-5">
-                <h1>Log In Admin Panel</h1>
+                <h1 class="AhOne">Log In Admin Panel</h1>
                 <p>Hey, Enter admin Details To Sign In To Your Account</p>
-                <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
-                    <label for="floatingInput">Email address</label>
-                </div>
-                <div class="form-floating">
-                    <input type="password" class="form-control" id="password" placeholder="Password">
-                    <label for="floatingPassword">Password</label>
-                </div>
-                <br />
-                <button id="login-btn" class="btn mt-3">Submit</button>
+                <form action="/dashboard.html">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                    </div>
+                    <br />
+                    <button id="login-btn" class="btn mt-3">Submit</button>
+                </form>
             </div>
             <div class="col-md-4 right_img"></div>
         </div>

@@ -16,7 +16,10 @@ h2{
     color: rgb(0, 0, 0);
     font-weight: bold;
 }
+.AhOne{
+    font-family: 'Josefin Sans', sans-serif;
 
+}
 label{
     font-family: 'Josefin Sans', sans-serif;
     color: rgb(0, 0, 0);
@@ -134,7 +137,7 @@ p{
     margin-top: 30px;
 }
 .sec_panel{
-    height: 400px;
+    height: auto;
     background-color: #0e0e0e;
     border-radius: 26px;
     padding: 20px;
@@ -161,10 +164,10 @@ p{
     border-radius: 26px;
     padding: 20px;
 }
-.form_create{
+#form_create{
     padding: 20px;
 }
-.form_Student{
+#form_Student{
     padding: 20px;
 }
 .medium{
@@ -239,7 +242,12 @@ padding-top: 20px;
 .font_foot{
     font-family: 'Josefin Sans', sans-serif;
 }
-
+marquee{
+    background-color: #0e0e0e;
+    color: #f5f2ea;
+    font-family: 'Josefin Sans', sans-serif;
+padding: 10px;
+}
 
 
 

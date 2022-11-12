@@ -17,6 +17,7 @@ import {
     updateDoc
 } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
 
+
 const firebaseConfig = {
     apiKey: "AIzaSyCmUZy2KYQO_UFn1VWdCfVjKbl5ov005Xw",
     authDomain: "attendance-app-7477.firebaseapp.com",
@@ -31,6 +32,11 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
+
+
+// firebase. initializeApp(config) ;
+// const db = firebase.firestore();
+db.settings({ timestampsInSnapshots: true});
 
 //*********************** Add Class Function ***********************//
 const submit_stu = document.getElementById("create_stu");
@@ -67,7 +73,7 @@ create_student.addEventListener("click", (event) => {
     let cnic = document.getElementById("cnic").value;
     let customFile = document.getElementById("customFile").value;
     let stu_courses = document.getElementById("stu_courses").value;
-    addDoc(collection(db, "Classes"), {
+    addDoc(collection(db, "Student"), {
         name: name,
         F_name: F_name,
         roll_no: roll_no,
@@ -77,6 +83,7 @@ create_student.addEventListener("click", (event) => {
         stu_courses: stu_courses
     });
 });
+
 
 //*********************** Edit Function ***********************//
 // const create_edit = document.getElementById("create_edit");
@@ -121,3 +128,24 @@ create_student.addEventListener("click", (event) => {
 //         batch: batch
 //     });
 // });
+
+
+
+const cafeList = document. querySelector("#cafe-list")
+
+
+function renderCafe(doc){
+let li = document.createEIement('li') ;
+let name = document.createE1ement('span');
+let city = document.createE1ement('span');
+li.setAttribute( 'data-id', doc.id);
+name.textContent = doc.data().name;
+city.textContent = doc.data().city;
+
+li.appendChi1d(name);
+li.appendChi1d(city);
+cafeList.appendChi1d(li) ;
+db. collection('cafes') .get().then((snapshot)
+snapshot.docs.forEach(doc => {
+renderCafe(doc);})
+})

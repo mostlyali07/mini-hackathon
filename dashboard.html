@@ -24,7 +24,7 @@
         <header>
             <div class="row head_main mt-2">
                 <div class="col-md-6 text_Right">
-                    <h1>Smit Attendance Panel</h1>
+                    <h1 class="AhOne">Smit Attendance Panel</h1>
                 </div>
                 <div class="col-md-6 text_Left">
                     <a class="c-demo" href="./index.html">Log Out</a>
@@ -36,7 +36,10 @@
             <div class="col-md-3 sec_panel mt-2 py-2">
                 <ul>
                     <li class="my_list mt-4 p-2"><i class="fa-solid fa-house-laptop"></i>Dashboard</li>
-                    <li class="my_list mt-3 p-2"><i class="fa-solid fa-user-plus"></i>Add Student</li>
+                    <li class="my_list mt-3 p-2" onclick="maiin_Doc()"><i class="fa-solid fa-folder-plus"></i>Add Class
+                    </li>
+                    <li class="my_list mt-3 p-2" onclick="main_Doc()"><i class="fa-solid fa-user-plus"></i>Add Student
+                    </li>
                     <li class="my_list mt-3 p-2"><i class="fa-solid fa-user-tag"></i>Class Details</li>
                     <li class="my_list mt-3 p-2"><i class="fa-solid fa-users-line"></i>Student Details</li>
                     <li class="my_list mt-3 p-2"><i class="fa-regular fa-credit-card"></i>Attendance</li>
@@ -44,7 +47,7 @@
             </div>
             <div class="col-md-1"></div>
             <div class="col-md-8 third_panel mt-2">
-                <form class="form_create" style="display: none;">
+                <form id="form_create">
                     <div class="form-group">
                         <label for="exampleFormControlSelect1">Teachers:</label>
                         <select class="form-control medium" id="teachers">
@@ -54,7 +57,7 @@
                             <option>Sir Haider</option>
                             <option>Sir Zunaib</option>
                         </select>
-                    </div><br>
+                    </div>
                     <Label>Enter Class Timing:</Label><br>
                     <input type="radio" id="class_timing" name="class_timing" value="9am To 11am">
                     <label for="class_timing">9am To 11am</label>
@@ -74,7 +77,7 @@
                             <option>B</option>
                             <option>C</option>
                         </select>
-                    </div><br>
+                    </div>
                     <div class="form-group">
                         <label for="exampleFormControlSelect1">Courses:</label>
                         <select class="form-control medium" id="courses">
@@ -82,7 +85,7 @@
                             <option>Web and Mobile Hybrid Applications</option>
                             <option>Artificial Intelligence</option>
                         </select>
-                    </div><br>
+                    </div>
                     <div class="form-group">
                         <label for="exampleFormControlSelect1">Batch:</label>
                         <select class="form-control medium" id="batch">
@@ -100,7 +103,7 @@
                     <!-- <button class="f-demo" id="create_edit">Edit</button> -->
                     <!-- <button class="g-demo" id="create_del">Delete</button> -->
                 </form>
-                <form class="form_Student">
+                <form id="form_Student" style="display: none;">
                     <div class="form-floating mb-3">
                         <input type="name" class="form-control medium" id="name" placeholder="name@example.com">
                         <label for="floatingInput">Name</label>
@@ -163,6 +166,16 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
     <script type="module" src="dash.js"></script>
+    <script>
+        function maiin_Doc() {
+            document.getElementById("form_create").style.display = 'block';
+            document.getElementById("form_Student").style.display = 'none';
+        }
+        function main_Doc() {
+            document.getElementById("form_create").style.display = 'none';
+            document.getElementById("form_Student").style.display = 'block';
+        }
+    </script>
 </body>
 
 </html>
