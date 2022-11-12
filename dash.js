@@ -39,8 +39,24 @@ submit_stu.addEventListener("click", (event) => {
     event.preventDefault()
     let teachers = document.getElementById("teachers").value;
     let class_timing = document.getElementById("class_timing").value;
+    let classes_schedule = document.getElementById("classes_schedule").value;
+    let sections = document.getElementById("sections").value;
+    let courses = document.getElementById("courses").value;
+    let batch = document.getElementById("batch").value;
     addDoc(collection(db, "Students"), {
         teacher: teachers,
-        class_timing: class_timing
+        class_timing: class_timing,
+        classes_schedule: classes_schedule,
+        sections: sections,
+        courses: courses,
+        batch: batch
+    });
+    updateDoc(collection(db, "Students"), {
+        teacher: teachers,
+        class_timing: class_timing,
+        classes_schedule: classes_schedule,
+        sections: sections,
+        courses: courses,
+        batch: batch
     });
 });
