@@ -40,7 +40,6 @@ const login = (event) => {
                 const errorMessage = error.message;
                 console.log(errorMessage);
             });
-        return false;
     }
     else{
         window.location.href="dashboard.html";
