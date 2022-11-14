@@ -36,7 +36,7 @@ const db = getFirestore(app);
 
 // firebase. initializeApp(config) ;
 // const db = firebase.firestore();
-db.settings({ timestampsInSnapshots: true});
+// db.settings({ timestampsInSnapshots: true});
 
 //*********************** Add Class Function ***********************//
 const submit_stu = document.getElementById("create_stu");
@@ -131,21 +131,21 @@ create_student.addEventListener("click", (event) => {
 
 
 
-const cafeList = document. querySelector("#cafe-list")
+// const cafeList = document. querySelector("#cafe-list")
 
 
-function renderCafe(doc){
-let li = document.createEIement('li') ;
-let name = document.createE1ement('span');
-let city = document.createE1ement('span');
-li.setAttribute( 'data-id', doc.id);
-name.textContent = doc.data().name;
-city.textContent = doc.data().city;
+// function renderCafe(doc){
+// let li = document.createEIement('li') ;
+// let name = document.createE1ement('span');
+// let city = document.createE1ement('span');
+// li.setAttribute( 'data-id', doc.id);
+// name.textContent = doc.data().name;
+// city.textContent = doc.data().city;
 
-li.appendChi1d(name);
-li.appendChi1d(city);
-cafeList.appendChi1d(li) ;
-db. collection('cafes') .get().then((snapshot)
-snapshot.docs.forEach(doc => {
-renderCafe(doc);})
-})
+// li.appendChi1d(name);
+// li.appendChi1d(city);
+// cafeList.appendChi1d(li) ;
+// db. collection('cafes') .get().then((snapshot)
+// snapshot.docs.forEach(doc => {
+// renderCafe(doc);})
+// })
