@@ -5,15 +5,7 @@ import {
 } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js";
 
 import {
-    doc,
-    setDoc,
-    getFirestore,
-    getDoc,
-    collection,
-    query,
-    where,
-    getDocs,
-    addDoc,
+    getFirestore
 } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
 
 const firebaseConfig = {
@@ -32,19 +24,27 @@ const db = getFirestore(app);
 
 
 
-const login = () => {
-    const email = document.getElementById("email");
-    const password = document.getElementById("password");
+const login = (event) => {
+    event.preventDefault()
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
     const auth = getAuth();
-    signInWithEmailAndPassword(auth, email.value, password.value)
-        .then((userCredential) => {
-            const user = userCredential.user;
-            console.log("user", user);
-        })
-        .catch((error) => {
-            const errorMessage = error.message;
-            console.log(errorMessage);
-        });
+    if (email, password == "") {
+        swal("Invalid!", "Field must be filled out!", "error");
+        signInWithEmailAndPassword(auth, email, password)
+              .then((userCredential) => {
+                const user = userCredential.user;
+                console.log("user", user);
+            })
+            .catch((error) => {
+                const errorMessage = error.message;
+                console.log(errorMessage);
+            });
+        return false;
+    }
+    else{
+        window.location.href="dashboard.html";
+    }
 };
 
 const loginBtn = document.getElementById("login-btn");
