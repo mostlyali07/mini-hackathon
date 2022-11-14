@@ -36,7 +36,7 @@ const db = getFirestore(app);
 
 // firebase. initializeApp(config) ;
 // const db = firebase.firestore();
-db.settings({ timestampsInSnapshots: true});
+// db.settings({ timestampsInSnapshots: true});
 
 //*********************** Add Class Function ***********************//
 const submit_stu = document.getElementById("create_stu");
