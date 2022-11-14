@@ -122,7 +122,7 @@ p{
     margin-right: 10px;
 }
 .c-demo:hover{
-    color: #fff;
+    color: #fff !important;
     background-color: #0000;
     border: 1px solid #fff;
     transition: 0.6s;
@@ -248,7 +248,9 @@ marquee{
     font-family: 'Josefin Sans', sans-serif;
 padding: 10px;
 }
-
+#log_out{
+    cursor: pointer;
+}
 
 
 

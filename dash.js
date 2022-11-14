@@ -1,5 +1,8 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
-
+import {
+    getAuth,
+    signOut,
+} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js";
 
 import {
     doc,
@@ -102,7 +105,17 @@ create_student.addEventListener("click", (event) => {
 //         batch: batch
 //     });
 // });
-
+var log_out = document.getElementById("log_out");
+log_out.addEventListener("click", (event) => {
+    event.preventDefault()
+    const auth = getAuth();
+    signOut(auth).then(() => {
+      // Sign-out successful.
+    }).catch((error) => {
+      // An error happened.
+    });
+    window.location.href="index.html";
+})
 
 //*********************** Delete Function ***********************//
 // const create_del = document.getElementById("create_del");
