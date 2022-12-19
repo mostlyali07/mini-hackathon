@@ -84,6 +84,11 @@ create_student.addEventListener("click", (event) => {
     });
 });
 
+const docRef= doc(db, "Classes", "daA7gqoDrgBHnmH7Hnys");
+getDoc(docRef) 
+    .then((doc) => {
+        console.log(doc.data(), doc.id);
+}) 
 
 //*********************** Edit Function ***********************//
 // const create_edit = document.getElementById("create_edit");
@@ -112,7 +117,7 @@ log_out.addEventListener("click", (event) => {
     signOut(auth).then(() => {
       // Sign-out successful.
     }).catch((error) => {
-      // An error happened.
+      console.log(error);
     });
     window.location.href="index.html";
 })

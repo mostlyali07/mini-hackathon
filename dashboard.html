@@ -34,21 +34,24 @@
             </div>
         </header>
         <div class="row">
+
+        </div>
+        <div class="row">
             <div class="col-md-3 sec_panel mt-2 py-2">
                 <ul>
                     <li class="my_list mt-4 p-2"><i class="fa-solid fa-house-laptop"></i>Dashboard</li>
-                    <li class="my_list mt-3 p-2" onclick="maiin_Doc()"><i class="fa-solid fa-folder-plus"></i>Add Class
+                    <li class="my_list mt-3 p-2" onclick=maiin_Doc()><i class="fa-solid fa-folder-plus"></i>Add Class
                     </li>
-                    <li class="my_list mt-3 p-2" onclick="main_Doc()"><i class="fa-solid fa-user-plus"></i>Add Student
+                    <li class="my_list mt-3 p-2" onclick=main_Doc()><i class="fa-solid fa-user-plus"></i>Add Student
                     </li>
-                    <li class="my_list mt-3 p-2"><i class="fa-solid fa-user-tag"></i>Class Details</li>
+                    <li class="my_list mt-3 p-2" onclick=maiiin_Doc()><i class="fa-solid fa-user-tag"></i>Class Details</li>
                     <li class="my_list mt-3 p-2"><i class="fa-solid fa-users-line"></i>Student Details</li>
                     <li class="my_list mt-3 p-2"><i class="fa-regular fa-credit-card"></i>Attendance</li>
                 </ul>
             </div>
             <div class="col-md-1"></div>
             <div class="col-md-8 third_panel mt-2">
-                <form id="form_create">
+                <form id="class_create" style="display: none;">
                     <div class="form-group">
                         <label for="exampleFormControlSelect1">Teachers:</label>
                         <select class="form-control medium" id="teachers">
@@ -145,6 +148,11 @@
                 </form>
             </div>
         </div>
+        <div class="row">
+            <dic id="class_details" style="display: none;">
+
+            </dic>
+        </div>
         <footer>
             <div class="row foot_main mt-2 mb-2">
                 <div class="col-md-6 text-center">
@@ -167,14 +175,21 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
     <script type="module" src="dash.js"></script>
-    <script>
+    <script type="text/javascript">
+        function maiiin_Doc() {
+            document.getElementById("class_create").style.display = "none";
+            document.getElementById("form_Student").style.display = "none";
+            document.getElementById("class_details").style.display = "block";
+        }
         function maiin_Doc() {
-            document.getElementById("form_create").style.display = 'block';
-            document.getElementById("form_Student").style.display = 'none';
+            document.getElementById("class_create").style.display = "block";
+            document.getElementById("form_Student").style.display = "none";
+            document.getElementById("class_details").style.display = "none";
         }
         function main_Doc() {
-            document.getElementById("form_create").style.display = 'none';
-            document.getElementById("form_Student").style.display = 'block';
+            document.getElementById("class_create").style.display = "none";
+            document.getElementById("form_Student").style.display = "block";
+            document.getElementById("class_details").style.display = "none";
         }
     </script>
 </body>
