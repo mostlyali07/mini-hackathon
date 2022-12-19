@@ -85,10 +85,10 @@ create_student.addEventListener("click", (event) => {
 });
 
 const docRef= doc(db, "Classes", "daA7gqoDrgBHnmH7Hnys");
-getDoc(docRef) 
+getDoc(docRef)
     .then((doc) => {
         console.log(doc.data(), doc.id);
-}) 
+})
 
 //*********************** Edit Function ***********************//
 // const create_edit = document.getElementById("create_edit");
@@ -143,24 +143,3 @@ log_out.addEventListener("click", (event) => {
 //         batch: batch
 //     });
 // });
-
-
-
-// const cafeList = document. querySelector("#cafe-list")
-
-
-// function renderCafe(doc){
-// let li = document.createEIement('li') ;
-// let name = document.createE1ement('span');
-// let city = document.createE1ement('span');
-// li.setAttribute( 'data-id', doc.id);
-// name.textContent = doc.data().name;
-// city.textContent = doc.data().city;
-
-// li.appendChi1d(name);
-// li.appendChi1d(city);
-// cafeList.appendChi1d(li) ;
-// db. collection('cafes') .get().then((snapshot)
-// snapshot.docs.forEach(doc => {
-// renderCafe(doc);})
-// })
